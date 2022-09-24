@@ -29,9 +29,6 @@ steps:
     projectKey: 'Agileproject112'
     projectName: 'Agileproject112'
 
-
-
-
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
@@ -39,7 +36,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 - 
-
     - task: SonarCloudAnalyze@1
 
     - task: SonarCloudPublish@1
